@@ -1,0 +1,246 @@
+<html>
+  <head>
+    <style>
+      body {
+        min-width: 290px;
+        color: #014421;
+        background-color: #FFFAF0;
+        font-family: 'Open Sans', Arial, sans-serif;
+        line-height: 1.5;
+      }
+
+      header {
+        color: black;
+        margin: 10px;
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: thin;
+      }
+
+      section article {
+        color: #16161D;
+        margin: 15px;
+        font-size: 0.96em;
+      }
+
+      section li {
+        margin: 15px 0px 0px 20px;
+      }
+
+      code {
+        display: block;
+        text-align: left;
+        white-space: pre-line;
+        position: relative;
+        word-break: normal;
+        word-wrap: normal;
+        line-height: 2;
+        background-color: #f7f7f7;
+        padding: 15px;
+        margin: 10px;
+        border-radius: 5px;
+      }
+
+      #navbar {
+        position: fixed;
+        min-width: 290px;
+        top: 0px;
+        left: 0px;
+        width: 300px;
+        height: 100%;
+        border-right: solid;
+        border-color: rgba(0, 22, 22, 0.4);
+      }
+
+      #main-doc header {
+        text-align: left;
+        margin: 0px;
+      }
+
+      #navbar ul {
+        height: 88%;
+        padding: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+
+      #navbar li {
+        color: #4d4e53;
+        border-top: 1px solid;
+        list-style: none;
+        position: relative;
+        width: 100%;
+      }
+
+      #navbar a {
+        display: block;
+        padding: 10px 30px;
+        color: #4d4e53;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      #main-doc {
+        position: absolute;
+        margin-left: 310px;
+        padding: 20px;
+        margin-bottom: 110px;
+      }
+
+      @media only screen and (max-width: 815px) {
+        /* For mobile phones: */
+        #navbar ul {
+          border: 1px solid;
+          height: 207px;
+        }
+
+        #navbar {
+          background-color: #F0EAD6;
+          position: absolute;
+          top: 0;
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          max-height: 275px;
+          border: none;
+          z-index: 1;
+          border-bottom: 2px solid;
+        }
+
+        #main-doc {
+          position: relative;
+          margin-left: 0px;
+          margin-top: 270px;
+        }
+      }
+
+      @media only screen and (max-width: 400px) {
+        #main-doc {
+          margin-left: -10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>How Mathematicians Figure the Odds</header>
+      <ul>
+        <li><a class="nav-link" href="#Who_Gets_Heaven?">Who Gets Heaven?</a></li>
+        <li><a class="nav-link" href="#Figuring_the_Odds">Figuring the Odds</a></li>
+        <li><a class="nav-link" href="#The_Geometric_Patterns_of_Chance">The Geometric Patterns of Chance</a></li>
+        <li><a class="nav-link" href="#In_Mathematics_We_Trust">In Mathematics We Trust</a></li>
+        <li><a class="nav-link" href="#The_Amazing_Bernoullis">The Amazing Bernoullis</a></li>
+        <li><a class="nav-link" href="#Using_Mathematics_to_Choose_Your_Options">Using Mathematics to Choose Your Options</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Who_Gets_Heaven?">
+        <header>Who Gets Heaven?</header>
+        <article>
+          <p>
+            People have always been fascinated by chance. According to ancient Greek mythology, the world began when the three brothers <code>Zeus, Poseidon, and Hades</code> rolled dice for the universe. On that occasion, so the story goes, Zeus won the first prize, the heavens, Poseidon took the second prize, the seas, and Hades had to settle for hell.
+          </p>
+
+          <p>
+            Early dice generally consisted of the small, squarish knucklebones, called astralagi, taken from the ankles of sheep or deer. Paintings of dice games using astralagi have been found on the walls of Egyptian tombs and on Greek vases, and polished astralagi have been found in archaeological excavations in many parts of the ancient world.
+          </p>
+          <p>
+            But for all our fascination with dice and other games of chance, it was not until the seventeenth century that anyone worked out the mathematics of these games. Perhaps surprisingly, the Greeks did not even try to develop such a theory. Given their high regard for mathematical knowledge, this was almost certainly because they did not believe there was any order to be found in chance events. To the Greeks, chance was the complete absence of order. Aristotle wrote, ''It is evidently equally foolish to accept probable reasoning from a mathematician and to demand from a rhetorician demonstrative proofs."
+          </p>
+          <p>
+            In some sense, the Greeks were right: there is no order in a purely chance event taken in isolation. In order to find order in chance—to discover a mathematical pattern—you have to see what happens when the same kind of chance event is repeated many times. The order studied in probability theory arises in the repetition of a chance event.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Figuring_the_Odds">
+        <header>Figuring the Odds</header>
+        <article>
+          <p>
+            The first step toward a theory of chance was taken when a sixteenth-century Italian physician—and keen gambler—named <code>Girolamo Cardano</code> described how to give numerical values to the possible outcomes of a roll of dice. He wrote up his observations in a book titled Book on Games of Chance, which he published in 1525.
+          </p>
+          <p>
+            Suppose you roll a die, said Cardano. Assuming the die is 'honest', there is an equal chance that it will land with any of the numbers 1 to 6 on top. Thus, the chance that each of the numbers 1 to 6 will be face up is 1 in 6, or 1/6. Today, we use the word probability for this numerical value: we say that the probability that the number 5, say, will be thrown is 1/6.
+          </p>
+          <p>
+            Going a step further, Cardano reasoned that the probability of throwing either a 1 or a 2 must be 2/6, or 1/3, since the desired outcome is one of two possibilities from a total of six.
+          </p>
+          <p>Going further still—though not quite far enough to make a real scientific breakthrough—Cardano calculated the probabilities of certain outcomes when a die is thrown repeatedly, or when two dice are thrown at once. For instance, what is the probability of throwing a 6 twice in two successive rolls of a die? Cardano reasoned that it must be 1/6 times 1/6, that is, 1/36. You multiply the two probabilities, since each of the six possible thirty-six possible combinations in all. Likewise, the probability of throwing either a 1 or a 2 twice in two successive rolls is 1/3 time 1/3, namely, 1/9.
+          </p>
+          <p>
+            What is the probability that, when two dice are thrown, the two umbers showing face up will add up to, say, 5? Here is how Cardano nalyzed that problem. For each die, there are six possible outcomes. So there are thirty-six (6 × 6) possible outcomes when the two dice are thrown: each of the six possible outcomes for one of the two dice can occur with each of the six possible outcomes for the other. How many of these outcomes sum to 5? List them all: 1 and 4, 2 and 3, 3 and 2, 4 and 1. That's four possibilities altogether. So of the thirty-six possible outcomes, four give a sum of 5. So, the probability of obtaining a sum of 5 is 4/36, that is, 1/9.
+          </p>
+          <p>
+            Cardano's analysis provided just enough insight for a prudent gam-bler to be able to bet wisely on the throw of the dice—or perhaps bewise enough not to play at all. But Cardano stopped just short of the keystep that leads to the modern theory of probability. So too did the greatItalian physicist <code>Galileo</code>, who rediscovered much of Cardano's analysis early in the seventeenth century at the request of his patron, the GrandDuke of Tuscany, who wanted to improve his performance at the gam-ing tables. What stopped both Cardano and Galileo was that they didnot look to see whether there was a way to use their numbers—their probabilities—to predict the future.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="The_Geometric_Patterns_of_Chance">
+        <header>The Geometric Patterns of Chance</header>
+        <article>
+          <p>
+            Though <code>Pascal and Fermat</code> established the theory of probability collaboratively, through their correspondence—the two men never met—they each approached the problem in different ways. Fermat preferred the algebraic techniques that he used to such devastating effect in number theory. Pascal, on the other hand, looked for geometric order beneath the patterns of chance. That random events do indeed exhibit geometric patterns is illustrated in dramatic fashion by what is now called Pascal's triangle.
+          </p>
+
+          <p>The symmetrical array of numbers constructed according to the following simple procedure:</p>
+              <ul>
+                <li>At the top, start with a 1.</li>
+                <li>On the line beneath it, put two 1s.</li>
+                <li>On the line beneath that, put a 1 at each end, and in the middle put the sum of the two numbers above and to each side, namely, 1 + 1 = 2.</li>
+                <li>On line four, put a 1 at each end, and at each point midway between two adjacent numbers on line three put the sum of those numbers. Thus, in the second place you put 1 + 2 = 3 and in the third place you put 2 + 1 = 3.</li>
+                <li>On line five, put a 1 at each end, and at each point midway between two adjacent numbers on line four put the sum of those numbers. Thus, in the second place you put 1 + 3 = 4, in the third place you put 3 + 3 = 6, and in the fourth place you put 3 + 1 = 4.</li>
+              </ul>
+          <p>
+            By continuing in this fashion as far as you want, you generate Pascal's triangle. The patterns of numbers in each row occur frequently in probability computations—Pascal's triangle exhibits a geometric pattern in the world of chance.
+          </p>
+          <p>
+            Since Pascal's triangle can be generated by a simple geometric procedure, it shows that there is geometric structure beneath questions of probability. Its discovery was a magnificent achievement. Pascal's triangle can be used to predict the future when the different individual outcomes are all equally likely. But this raises an obvious question: is it possible to make similar kinds of predictions under different circumstances, when the individual outcomes are not equally likely? If the answer is yes, then humankind has the basis for managing risk.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="In_Mathematics_We_Trust">
+        <header>In Mathematics We Trust</header>
+        <article>
+         <p>
+          You don't have to set foot in a casino in order to gamble. Indeed, many individuals who would claim to be very much opposed to gambling nevertheless regularly place bets—bets based upon the value they put on their lives, their houses, their cars, and their other possessions. For that is exactly what you are doing when you buy insurance. The insurance company estimates the probability that, say, your car will sustain serious damage in an accident, and then offers you odds against that happening. If there is no accident, the insurer keeps the comparatively small premium you have paid. If there is an accident, the insurer pays out the cost of repairs or a new car.
+        </p>
+        <p>
+          The system works because the insurer uses mathematics to compute the likelihood of your having an accident. Based on the measured (or estimated) frequency of accidents, the insurer can determine the premiums for the policies sold so that the total amount received in premiums exceeds (by an appropriate margin) the total amount likely to be paid out. If, in one year, there are more claims than anticipated, the insurer will have to pay out more than anticipated, and profits will fall. In a year when there are fewer claims than expected, the company's profits will be higher than normal.
+        </p>
+        <p>
+          This is a little different from calculating the probabilities of outcomes of gambling games. For games of chance, you can determine the precise probability of each particular outcome, as Cardano did for the throw of dice. In the case of events such as automobile accidents or deaths, however, it is not possible to determine the probabilities by pure reasoning. You have to collect some real data. For instance, life insurance policies are based on life expectancy tables, which list the number of years a person is likely to live, depending on their current age, where they live, their occupation, their lifestyle, and so forth.
+        </p>
+        </article>
+      </section>
+      <section class="main-section" id="The_Amazing_Bernoullis">
+        <header>The Amazing Bernoullis</header>
+        <p>
+          The development of the mathematics of chance during the eighteenth century owes much to two members of one of the most remarkable families of all time. "The Amazing Bernoullis" sounds like the name of a circus act. However, it was not on the trapeze or the high wire that the Bernoullis performed their dazzling feats, but in mathematics.
+        </p>
+        <p>
+          In all, there were eight members of the family who distinguished themselves in mathematics. The father of the family was <code>Nicolaus Bernoulli</code>, a wealthy merchant who lived in Basel, Switzerland, from 1623 to 1708. His three sons <code>Jacob, Nicolaus, and Johann</code> all went on to become first-rate mathematicians.
+        </p>
+        <p>
+          One of Jacob's most significant contributions to mathematics is his 'law of large numbers', a major theorem in the theory of probability. The other members of the family who contributed to the new mathematics of chance were Johann's son Daniel, also known for his discovery of 'Bernoulli's equation', which keeps an aircraft in the sky, and Jacob's nephew Nicolaus (another Nicolaus—there were four Nicolauses in all). Jacob and Daniel were interested in different aspects of what was essentially the same question: how can probability theory be taken from the gaming table—where exact probabilities can be calculated—and applied in the far more messy real world?
+        </p>
+        <p>
+          The specific problem that Jacob worked on was already implicit in the earlier work of <code>John Graunt</code> on mortality rates. Graunt was well aware that the data he had available, while extensive, represented only a sample of the entire population: the population of London. And even for the population of London, the data were for a specific time period. Yet the relatively limited nature of the data did not prevent him from making generalizations that went beyond the data itself. By extrapolating from the data in the Bills of Mortality to obtain conclusions for the entire country and for more extensive periods of time, Graunt was one of the first analysts to perform what is nowadays called statistical inference: drawing conclusions about a large population based on data collected for a small sample. For such a process to lead to reliable conclusions, the sample should be 'representative' of the whole population. How can a representative sample be chosen?
+        </p>
+      </section>
+      <section class="main-section" id="Using_Mathematics_to_Choose_Your_Options">
+        <header>Using Mathematics to Choose Your Options</header>
+        <article>
+          <p>
+            In 1997, the Nobel Prize in economics was shared by Stanford University <code>professor of finance (emeritus) Myron Scholes and economist Robert C. Merton</code> of Harvard University. The prize would undoubtedly have been shared with a third person, Fischer Black, but for the latter's untimely death in 1995. The prize was awarded for the discovery, in 1970, of a single mathematical formula: the Black—Scholes formula.
+          </p>
+          <p>
+            Discovered by Scholes and Black, and developed by Merton, the Black—Scholes formula tells investors what value to put on a financial derivative. A derivative is a financial instrument that has no value of its own; rather, it derives its value from the value of some other asset. A common example is the stock option, which provides the purchaser with the option—but not the obligation—to purchase stock at an agreedupon price before a specified date. Derivatives amount to 'side bets' used to offset the risks associated with doing business under the ever-changing circumstances of the everyday world.
+          </p>
+          <p>
+            So great was the role played by the Black—Scholes formula (and extensions due to Merton) in the growth of the new options market that, when the American stock market crashed in 1978, the influential business magazine Forbes put the blame squarely on that one formula. Scholes himself has said that it was not so much the formula that was to blame, but rather that marketeers had not grown sufficiently sophisticated in how to use it.
+          </p>
+        </article>
+      </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
